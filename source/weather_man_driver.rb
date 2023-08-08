@@ -1,19 +1,16 @@
 require "csv"
 
-require_relative "maximums_from_year"
-require_relative "search_average"
-require_relative "displaying_plus_symbol"
-require_relative "displaying_plus_symbol_2nd"
+require_relative "question_1"
+require_relative "question_2"
+require_relative "question_3_4"
 
 def selection
     if ARGV[0] == "-a"
-        maximums_from_year
+        question_1
     elsif ARGV[0] == "-b"
-        search_average
-    elsif ARGV[0] == "-c"
-        displaying_plus_symbol
-    elsif ARGV[0] == "-d"
-        displaying_plus_symbol_2
+        question_2
+    elsif ARGV[0] == "-c" || ARGV[0] == "-d"
+        question_3_4
     end
 end
 
