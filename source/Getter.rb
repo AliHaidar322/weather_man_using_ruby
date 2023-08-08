@@ -5,7 +5,7 @@ module Getter
     @min_temp_index = 0
     @max_humd_index = 0
     @date_index = 0
-   
+
     def get_indexes(array)
         count = 0
         array.each do |j|

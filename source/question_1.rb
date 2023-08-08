@@ -2,7 +2,7 @@ require_relative "Getter"
 require_relative "utility_methods"
 def question_1
    include Getter
-    # Necessary Variables
+    # Necessary Variables   
     max_temp = ["",-99]
     min_temp = ["",99]
     max_humd = ["",0]
