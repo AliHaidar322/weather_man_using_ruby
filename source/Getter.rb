@@ -1,10 +1,13 @@
 require "csv"
 
-module Getter
-    @max_temp_index = 0
-    @min_temp_index = 0
-    @max_humd_index = 0
-    @date_index = 0
+class Getter
+    attr_accessor :max_temp_index, :min_temp_index, :max_humd_index, :date_index
+    def initialize()
+        @max_temp_index = 0
+        @min_temp_index = 0
+        @max_humd_index = 0
+        @date_index = 0
+   end
 
     def get_indexes(array)
         count = 0
